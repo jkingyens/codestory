@@ -1,0 +1,15 @@
+{
+  "name": "coulomb",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "start": "electron ."
+  },
+  "author": "Jeff Kingyens <jkingyens@google.com>",
+  "license": "MIT",
+  "dependencies": {
+    "dockerode": "^2.3.1",
+    "electron": "^1.4.4",
+    "material-design-lite": "^1.2.1"
+  }
+}
