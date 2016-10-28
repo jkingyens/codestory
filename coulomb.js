@@ -1,5 +1,6 @@
 const dc = require('dockerode')
 const {app, BrowserWindow} = require('electron')
+const reveal = require('reveal')
 
 let win
 let docker
@@ -13,6 +14,13 @@ function createWindow () {
     if (err) {
       win = new BrowserWindow({width: 800, height: 600})
       win.loadURL(`file://${__dirname}/nodocker.html`)
+      win.on('closed', () => {
+        win = null
+      })
+    } else {
+      win = new BrowserWindow({width: 800, height: 600})
+      win.loadURL(`file://${__dirname}/deck.html`)
+      // win.webContents.openDevTools()
       win.on('closed', () => {
         win = null
       })

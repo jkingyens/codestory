@@ -10,6 +10,9 @@
   "dependencies": {
     "dockerode": "^2.3.1",
     "electron": "^1.4.4",
-    "material-design-lite": "^1.2.1"
+    "headjs": "^1.0.3",
+    "highlightjs": "^8.7.0",
+    "material-design-lite": "^1.2.1",
+    "reveal": "^0.0.4"
   }
 }

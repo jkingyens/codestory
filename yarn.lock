@@ -344,6 +344,14 @@ hawk@~3.1.3:
     hoek "2.x.x"
     sntp "1.x.x"
 
+headjs:
+  version "1.0.3"
+  resolved "https://registry.yarnpkg.com/headjs/-/headjs-1.0.3.tgz#b368ebbfa8b6c3961c1a33105ec811d54dd8783f"
+
+highlightjs:
+  version "8.7.0"
+  resolved "https://registry.yarnpkg.com/highlightjs/-/highlightjs-8.7.0.tgz#13397cd8dd8ad7d4cfe77adffb8088a10ee3b708"
+
 hoek@2.x.x:
   version "2.16.3"
   resolved "https://registry.yarnpkg.com/hoek/-/hoek-2.16.3.tgz#20bb7403d3cea398e91dc4710a8ff1b8274a25ed"
@@ -772,6 +780,10 @@ request@^2.45.0:
     stringstream "~0.0.4"
     tough-cookie "~2.3.0"
     tunnel-agent "~0.4.1"
+
+reveal:
+  version "0.0.4"
+  resolved "https://registry.yarnpkg.com/reveal/-/reveal-0.0.4.tgz#1c1428193359fb03bc029139062ea29f8f691d85"
 
 rimraf@^2.2.8:
   version "2.5.4"
