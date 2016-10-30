@@ -20,7 +20,7 @@ function createWindow () {
     } else {
       win = new BrowserWindow({width: 800, height: 600})
       win.loadURL(`file://${__dirname}/deck.html`)
-      // win.webContents.openDevTools()
+      win.webContents.openDevTools()
       win.on('closed', () => {
         win = null
       })

@@ -4,7 +4,7 @@
 	<head>
 		<meta charset="utf-8">
     <meta name="author" content="Jeff Kingyens">
-		<meta name="description" content="A boilerplate for creating decks that builds code">
+		<meta name="description" content="JS Stack from Scratch">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
 		<title>Coulomb: A slide deck that builds code</title>
@@ -19,173 +19,27 @@
 
 		<div class="reveal">
 
-			<!-- Any section element inside of this container is displayed as a slide -->
 			<div class="slides">
+
 				<section>
-					<h1>Coulomb</h1>
-					<h3>A slide deck that builds code</h3>
+					<h3>A JS Stack from Scratch</h3>
 					<p>
 						<small>jkingyens@google.com</small>
 					</p>
 				</section>
 
-				<section>
-					<h2>Hello There</h2>
+				<section data-state="closeterminal">
+					<h3>Node, NPM, Yarn, and package.json</h3>
 					<p>
-						Coulomb enables you to create presentations over top of running code samples. We will get started by building a "hello, world" program in C++.
-            When you move to the next slide, the program will be built and the output will be displayed.
+						First, we need to install Node, which is not only used for back-end JavaScript, but all the tools we need to build a modern Front-End stack.
 					</p>
 				</section>
 
-				<!-- Example of nested vertical slides -->
-				<section>
-					<section>
-						<h2>Program Output</h2>
-						<p>This slide shows the program output</p>
-						<p>Use the <em>Space</em> key to navigate through all slides.</p>
-						<br>
-						<a href="#" class="navigate-down">
-							<img width="178" height="238" data-src="https://s3.amazonaws.com/hakim-static/reveal-js/arrow.png" alt="Down arrow">
-						</a>
-					</section>
-					<section>
-						<h2>Basement Level 1</h2>
-						<p>Nested slides are useful for adding additional detail underneath a high level horizontal slide.</p>
-					</section>
-					<section>
-						<h2>Basement Level 2</h2>
-						<p>That's it, time to go back up.</p>
-						<br>
-						<a href="#/2">
-							<img width="178" height="238" data-src="https://s3.amazonaws.com/hakim-static/reveal-js/arrow.png" alt="Up arrow" style="transform: rotate(180deg); -webkit-transform: rotate(180deg);">
-						</a>
-					</section>
+				<section data-state="showterminal">
+					<div id="terminal"></div>
 				</section>
 
-				<section>
-					<h2>Slides</h2>
-					<p>
-						Not a coder? Not a problem. There's a fully-featured visual editor for authoring these, try it out at <a href="http://slides.com" target="_blank">http://slides.com</a>.
-					</p>
-				</section>
-
-				<section>
-					<h2>Point of View</h2>
-					<p>
-						Press <strong>ESC</strong> to enter the slide overview.
-					</p>
-					<p>
-						Hold down alt and click on any element to zoom in on it using <a href="http://lab.hakim.se/zoom-js">zoom.js</a>. Alt + click anywhere to zoom back out.
-					</p>
-				</section>
-
-				<section>
-					<h2>Touch Optimized</h2>
-					<p>
-						Presentations look great on touch devices, like mobile phones and tablets. Simply swipe through your slides.
-					</p>
-				</section>
-
-				<section data-markdown>
-					<script type="text/template">
-						## Markdown support
-
-						Write content using inline or external Markdown.
-						Instructions and more info available in the [readme](https://github.com/hakimel/reveal.js#markdown).
-
-						```
-						<section data-markdown>
-						  ## Markdown support
-
-						  Write content using inline or external Markdown.
-						  Instructions and more info available in the [readme](https://github.com/hakimel/reveal.js#markdown).
-						</section>
-						```
-					</script>
-				</section>
-
-				<section>
-					<section id="fragments">
-						<h2>Fragments</h2>
-						<p>Hit the next arrow...</p>
-						<p class="fragment">... to step through ...</p>
-						<p><span class="fragment">... a</span> <span class="fragment">fragmented</span> <span class="fragment">slide.</span></p>
-
-						<aside class="notes">
-							This slide has fragments which are also stepped through in the notes window.
-						</aside>
-					</section>
-					<section>
-						<h2>Fragment Styles</h2>
-						<p>There's different types of fragments, like:</p>
-						<p class="fragment grow">grow</p>
-						<p class="fragment shrink">shrink</p>
-						<p class="fragment fade-out">fade-out</p>
-						<p class="fragment fade-up">fade-up (also down, left and right!)</p>
-						<p class="fragment current-visible">current-visible</p>
-						<p>Highlight <span class="fragment highlight-red">red</span> <span class="fragment highlight-blue">blue</span> <span class="fragment highlight-green">green</span></p>
-					</section>
-				</section>
-
-				<section id="transitions">
-					<h2>Transition Styles</h2>
-					<p>
-						You can select from different transitions, like: <br>
-						<a href="?transition=none#/transitions">None</a> -
-						<a href="?transition=fade#/transitions">Fade</a> -
-						<a href="?transition=slide#/transitions">Slide</a> -
-						<a href="?transition=convex#/transitions">Convex</a> -
-						<a href="?transition=concave#/transitions">Concave</a> -
-						<a href="?transition=zoom#/transitions">Zoom</a>
-					</p>
-				</section>
-
-				<section>
-					<section data-background="#dddddd">
-						<h2>Slide Backgrounds</h2>
-						<p>
-							Set <code>data-background="#dddddd"</code> on a slide to change the background color. All CSS color formats are supported.
-						</p>
-						<a href="#" class="navigate-down">
-							<img width="178" height="238" data-src="https://s3.amazonaws.com/hakim-static/reveal-js/arrow.png" alt="Down arrow">
-						</a>
-					</section>
-					<section data-background="https://s3.amazonaws.com/hakim-static/reveal-js/image-placeholder.png">
-						<h2>Image Backgrounds</h2>
-						<pre><code class="hljs">&lt;section data-background="image.png"&gt;</code></pre>
-					</section>
-					<section data-background="https://s3.amazonaws.com/hakim-static/reveal-js/image-placeholder.png" data-background-repeat="repeat" data-background-size="100px">
-						<h2>Tiled Backgrounds</h2>
-						<pre><code class="hljs" style="word-wrap: break-word;">&lt;section data-background="image.png" data-background-repeat="repeat" data-background-size="100px"&gt;</code></pre>
-					</section>
-					<section data-background-video="https://s3.amazonaws.com/static.slid.es/site/homepage/v1/homepage-video-editor.mp4,https://s3.amazonaws.com/static.slid.es/site/homepage/v1/homepage-video-editor.webm" data-background-color="#000000">
-						<div style="background-color: rgba(0, 0, 0, 0.9); color: #fff; padding: 20px;">
-							<h2>Video Backgrounds</h2>
-							<pre><code class="hljs" style="word-wrap: break-word;">&lt;section data-background-video="video.mp4,video.webm"&gt;</code></pre>
-						</div>
-					</section>
-					<section data-background="http://i.giphy.com/90F8aUepslB84.gif">
-						<h2>... and GIFs!</h2>
-					</section>
-				</section>
-
-				<section data-transition="slide" data-background="#4d7e65" data-background-transition="zoom">
-					<h2>Background Transitions</h2>
-					<p>
-						Different background transitions are available via the backgroundTransition option. This one's called "zoom".
-					</p>
-					<pre><code class="hljs">Reveal.configure({ backgroundTransition: 'zoom' })</code></pre>
-				</section>
-
-				<section data-transition="slide" data-background="#b5533c" data-background-transition="zoom">
-					<h2>Background Transitions</h2>
-					<p>
-						You can override background transitions per-slide.
-					</p>
-					<pre><code class="hljs" style="word-wrap: break-word;">&lt;section data-background-transition="zoom"&gt;</code></pre>
-				</section>
-
-				<section>
+				<section data-state="closeterminal">
 					<h2>Pretty Code</h2>
 					<pre><code class="hljs" data-trim contenteditable>
 function linkify( selector ) {
@@ -255,41 +109,6 @@ function linkify( selector ) {
 					</table>
 				</section>
 
-				<section>
-					<h2>Clever Quotes</h2>
-					<p>
-						These guys come in two forms, inline: <q cite="http://searchservervirtualization.techtarget.com/definition/Our-Favorite-Technology-Quotations">
-						&ldquo;The nice thing about standards is that there are so many to choose from&rdquo;</q> and block:
-					</p>
-					<blockquote cite="http://searchservervirtualization.techtarget.com/definition/Our-Favorite-Technology-Quotations">
-						&ldquo;For years there has been a theory that millions of monkeys typing at random on millions of typewriters would
-						reproduce the entire works of Shakespeare. The Internet has proven this theory to be untrue.&rdquo;
-					</blockquote>
-				</section>
-
-				<section>
-					<h2>Intergalactic Interconnections</h2>
-					<p>
-						You can link between slides internally,
-						<a href="#/2/3">like this</a>.
-					</p>
-				</section>
-
-				<section>
-					<h2>Speaker View</h2>
-					<p>There's a <a href="https://github.com/hakimel/reveal.js#speaker-notes">speaker view</a>. It includes a timer, preview of the upcoming slide as well as your speaker notes.</p>
-					<p>Press the <em>S</em> key to try it out.</p>
-
-					<aside class="notes">
-						Oh hey, these are some notes. They'll be hidden in your presentation, but you can see them if you open the speaker notes window (hit 's' on your keyboard).
-					</aside>
-				</section>
-
-				<section>
-					<h2>Export to PDF</h2>
-					<p>Presentations can be <a href="https://github.com/hakimel/reveal.js#pdf-export">exported to PDF</a>, here's an example:</p>
-					<iframe data-src="https://www.slideshare.net/slideshow/embed_code/42840540" width="445" height="355" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" style="border:3px solid #666; margin-bottom:5px; max-width: 100%;" allowfullscreen> </iframe>
-				</section>
 
 				<section>
 					<h2>Global State</h2>
@@ -342,10 +161,28 @@ Reveal.addEventListener( 'customevent', function() {
 
 		</div>
 
+		<script src="node_modules/xterm/dist/xterm.js"></script>
     <script src="node_modules/headjs/dist/1.0.0/head.min.js"></script>
 		<script src="node_modules/reveal/index.js"></script>
 
 		<script>
+
+		  //setup cookies?
+			// 'use strict';
+			let ElectronCookies = require('@exponent/electron-cookies');
+			ElectronCookies.enable({
+			  origin: 'https://coulomb.io',
+			});
+
+		  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+		  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+		  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+		  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+		  ga('create', 'UA-86541741-1', 'auto');
+			ga('set', 'location', 'https://coulomb.io/');
+      ga('set', 'checkProtocolTask', null);
+		  ga('send', 'pageview');
 
 			// More info https://github.com/hakimel/reveal.js#configuration
 			Reveal.initialize({
@@ -361,6 +198,28 @@ Reveal.addEventListener( 'customevent', function() {
 					{ src: 'node_modules/highlightjs/highlight.pack.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
 				]
 			});
+
+			// Exposes the terminal in an existing DOM object.
+			// term.open(document.getElementById('xterm-container'));
+
+			var term;
+			Reveal.addEventListener( 'showterminal', function() {
+				console.log( '"showterminal" has fired' );
+				term = new Terminal({
+					cursorBlink: false,  // Do not blink the terminal's cursor
+				  cols: 120,  // Set the terminal's width to 120 columns
+				  rows: 80  // Set the terminal's height to 80 rows
+				});
+				term.open(document.getElementById('#terminal'));
+				term.write('Hello from \033[1;3;31mxterm.js\033[0m $ ')
+				term.blur();
+			} );
+			Reveal.addEventListener( 'closeterminal', function() {
+				console.log( '"closeterminal" has fired' );
+				if (!term) return;
+				term.destroy();
+				term = null
+			} );
 
 		</script>
 

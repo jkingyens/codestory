@@ -8,11 +8,15 @@
   "author": "Jeff Kingyens <jkingyens@google.com>",
   "license": "MIT",
   "dependencies": {
+    "@exponent/electron-cookies": "^2.0.0",
+    "amplitude": "^3.0.0",
     "dockerode": "^2.3.1",
     "electron": "^1.4.4",
+    "electron-cookies": "^1.1.0",
     "headjs": "^1.0.3",
     "highlightjs": "^8.7.0",
     "material-design-lite": "^1.2.1",
-    "reveal": "^0.0.4"
+    "reveal": "^0.0.4",
+    "xterm": "^2.0.1"
   }
 }
