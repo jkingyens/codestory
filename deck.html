@@ -12,6 +12,7 @@
 		<link rel="stylesheet" href="node_modules/reveal/index.css">
 		<link rel="stylesheet" href="node_modules/reveal/theme/night.css" id="theme">
 		<link rel="stylesheet" href="node_modules/highlightjs/styles/zenburn.css">
+		<link rel="stylesheet" href="node_modules/xterm/dist/xterm.css" />
 
 	</head>
 
@@ -202,24 +203,7 @@ Reveal.addEventListener( 'customevent', function() {
       ga('set', 'checkProtocolTask', null);
 		  ga('send', 'pageview');
 
-			// More info https://github.com/hakimel/reveal.js#configuration
-			Reveal.initialize({
-				controls: true,
-				progress: true,
-				history: true,
-				center: true,
-
-				transition: 'slide', // none/fade/slide/convex/concave/zoom
-
-				// More info https://github.com/hakimel/reveal.js#dependencies
-				dependencies: [
-					{ src: 'node_modules/highlightjs/highlight.pack.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
-				]
-			});
-
 			// Exposes the terminal in an existing DOM object.
-			// term.open(document.getElementById('xterm-container'));
-
 			var term;
 			Reveal.addEventListener( 'showterminal', function() {
 				console.log( '"showterminal" has fired' );
@@ -238,6 +222,21 @@ Reveal.addEventListener( 'customevent', function() {
 				term.destroy();
 				term = null
 			} );
+
+			// More info https://github.com/hakimel/reveal.js#configuration
+			Reveal.initialize({
+				controls: true,
+				progress: true,
+				history: true,
+				center: true,
+
+				transition: 'slide', // none/fade/slide/convex/concave/zoom
+
+				// More info https://github.com/hakimel/reveal.js#dependencies
+				dependencies: [
+					{ src: 'node_modules/highlightjs/highlight.pack.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+				]
+			});
 
 		</script>
 
